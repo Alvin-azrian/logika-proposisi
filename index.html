@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Logika Proposisi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="background">
+        <div class="calculator"> 
+            <button class="team" onclick="window.location.href='team.html'">👤<span class="tooltip">Anggota Kelompok</span></button>
+        <h1 class="title">Kalkulator Logika Proposisi</h1>
+
+        <div class="display">
+            <div class="placeholder" id="placeholderDisplay">Masukkan ekspresi</div> <!-- UBAH: Tambahkan placeholder -->
+            <div class="expression" id="display"></div>
+            <div class="result" id="result"></div>
+        </div>
+        <div class="variables">
+            <div class="variable-control">
+                <span class="variable-label">P</span>
+                <button id="toggleP" class="toggle-btn toggle-false" onclick="toggleVariable('P')">FALSE</button>
+            </div>
+            <div class="variable-control">
+                <span class="variable-label">Q</span>
+                <button id="toggleQ" class="toggle-btn toggle-false" onclick="toggleVariable('Q')">FALSE</button>
+            </div>
+        </div>
+        
+        <div class="buttons">
+            <button onclick="handleClick('C')" class="clear">C</button>
+            <button onclick="handleClick('P')" class="input">P</button>
+            <button onclick="handleClick('Q')" class="input" >Q</button>
+           
+            <button onclick="handleClick('∧')" class="operator">∧</button>
+            <button onclick="handleClick('∨')" class="operator">∨</button>
+            <button onclick="handleClick('¬')" class="operator">¬</button>
+            
+            <button onclick="handleClick('→')" class="operator">→</button>
+            <button onclick="handleClick('(')">(</button>
+            <button onclick="handleClick(')')">)</button>
+            
+            <button onclick="handleClick('del')" class="clear">Del</button>
+            <button onclick="handleClick('=')" class="equal">=</button>
+        </div>
+    </div>
+</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

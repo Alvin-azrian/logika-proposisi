@@ -1,0 +1,323 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url("image/background.jpg");
+}
+
+.calculator {
+    width: 400px;
+    height: 550px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    color: #1a1a1a;
+}
+
+.variables {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.variable-control {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.variable-label {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.toggle-btn {
+    padding: 5px 10px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-width: 70px;
+}
+
+.toggle-true {
+    background-color: #40c057;
+    color: white;
+}
+
+.toggle-false {
+    background-color: #fa5252;
+    color: white;
+}
+
+.display {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    min-height: 80px;
+    font-size: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+
+.expression {
+    font-size: 18px;
+    margin-bottom: 8px;
+    min-height: 24px;
+    word-wrap: break-word;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2px;
+}
+
+button {
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: #e9ecef;
+    color: #1a1a1a;
+    transition: background-color 0.2s;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    background-color: #dee2e6;
+}
+
+button.equal {
+    grid-column: span 2;
+    background-color: #228be6;
+    color: white;
+}
+
+button.equal:hover {
+    background-color: #1c7ed6;
+}
+
+button.clear {
+    background-color: #fa5252;
+    color: white;
+}
+
+button.clear:hover {
+    background-color: #e03131;
+}
+
+.operator {
+    font-weight: bold;
+    background-color: #e9ecef;
+}
+
+.input {
+    font-weight: bold;
+    background-color: #aab4c0;
+}
+.placeholder {
+    position: absolute;
+    top: 10px; 
+    left: 10px; 
+    color: #6f6363;
+    pointer-events: none; 
+}
+
+
+/* anggota */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f5;
+}
+
+.container {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1000px; /* Maksimal lebar */
+    width: 90vw; /* Lebar responsif */
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 180px;
+    height: 370px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+   
+}
+
+.card:hover {
+    transform: scale(1.05); /* Memperbesar kartu sedikit */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Menambahkan bayangan lebih tebal */
+}
+
+.ketua {
+    background-color: #ff6347;
+    color: #ffffff;
+    
+}
+
+.anggota {
+    background-color: #ff6347;
+    color: #ffffff;
+}
+
+.card img {
+    width: 140px; /* Memperbesar lebar foto */
+    height: 160px; /* Memperbesar tinggi foto */
+    border-radius: 10%;
+    align-self: center;
+    margin-bottom: 10px;
+    opacity: none;
+}
+
+.card h2 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+    .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    
+
+
+
+.social-media a {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: none;
+    color: #11060e;
+    text-decoration: none;
+    font-size: 20px; /* Ukuran ikon */
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-media a:hover {
+    background-color: #333;
+    color: #ffffff;
+}
+
+/* Media Queries untuk Responsivitas Lebih Baik */
+@media (max-width: 768px) {
+    .card {
+        width: 45%; /* Mengurangi lebar kartu di layar lebih kecil */
+        height: auto; /* Tinggi otomatis */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 90%; /* Lebar penuh pada layar kecil */
+    }
+}
+
+.back-button {
+    position: fixed;
+    bottom: 10px; /* Jarak dari bawah halaman */
+    left: 50%;
+    transform: translateX(-50%); /* Pusatkan tombol */
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    z-index: 1000; /* Pastikan tombol berada di atas konten lain */
+    opacity: 0.9;
+}
+
+
+.back-button:hover {
+    background-color: #ff4757;
+}
+.team{
+    padding: 0px 2px;
+    background-color: #eee2e2;
+    color: white;
+    position: relative; /* Untuk mengatur posisi tooltip */
+    margin-bottom: 0%;
+}
+.tooltip {
+    display: none; /* Sembunyikan tooltip secara default */
+    position: absolute;
+    top: 50%; /* Posisikan di tengah vertikal tombol */
+    left: 100%; /* Posisi tooltip di samping kanan tombol */
+    transform: translateY(-50%); /* Sesuaikan posisi agar tepat di tengah */
+    background-color: #eee2e2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: none;
+    white-space: nowrap; /* Mencegah teks dibungkus */
+    font-size: 14px;
+    opacity: 0; /* Sembunyikan tooltip dengan transparansi */
+    transition: opacity 0.3s ease; /* Animasi transisi */
+}
+
+
+.team:hover .tooltip {
+    display: block; /* Tampilkan tooltip saat hover */
+    opacity: 1; /* Ubah transparansi menjadi terlihat */
+}
