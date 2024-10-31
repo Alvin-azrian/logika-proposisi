@@ -13,12 +13,13 @@ body {
 }
 
 .calculator {
-    width: 400px;
+    width: 300px;
     height: 550px;
-    background: white;
+    background: #ff6347;
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
+    
 }
 
 .title {
@@ -59,12 +60,12 @@ body {
 }
 
 .toggle-true {
-    background-color: #40c057;
+    background-color: #309342;
     color: white;
 }
 
 .toggle-false {
-    background-color: #fa5252;
+    background-color: #c00707;
     color: white;
 }
 
@@ -117,7 +118,7 @@ button:hover {
 
 button.equal {
     grid-column: span 2;
-    background-color: #228be6;
+    background-color: #2263e6;
     color: white;
 }
 
@@ -126,7 +127,7 @@ button.equal:hover {
 }
 
 button.clear {
-    background-color: #fa5252;
+    background-color: #c00707;
     color: white;
 }
 
@@ -141,8 +142,12 @@ button.clear:hover {
 
 .input {
     font-weight: bold;
-    background-color: #aab4c0;
+    background-color: #cbcdcd;
 }
+.input:hover{
+    background-color: #e0e1eb;
+}
+
 .placeholder {
     position: absolute;
     top: 10px; 
@@ -307,7 +312,7 @@ body {
     left: 100%; /* Posisi tooltip di samping kanan tombol */
     transform: translateY(-50%); /* Sesuaikan posisi agar tepat di tengah */
     background-color: #eee2e2;
-    color: #fff;
+    color: #6c6666;
     padding: 5px 10px;
     border-radius: none;
     white-space: nowrap; /* Mencegah teks dibungkus */
